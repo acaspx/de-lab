@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Pin the project root so stray lockfiles in ~ aren't picked up
+  turbopack: { root: __dirname },
 };
 
 export default nextConfig;
